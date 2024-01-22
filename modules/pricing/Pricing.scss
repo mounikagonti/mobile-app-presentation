@@ -120,3 +120,15 @@
     }
   }
 }
+@media screen and (max-width: $sm) {
+  .pricing_wrapper {
+    .pricing_card_wrapper {
+      grid-template-columns: 1fr;
+      gap: 120px;
+      .pricing_card {
+        width: 320px;
+        height: 360px;
+      }
+    }
+  }
+}

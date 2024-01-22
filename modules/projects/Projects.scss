@@ -70,3 +70,21 @@
     }
   }
 }
+@media screen and (max-width: $sm) {
+  .projects_wrapper {
+    .projects_container {
+      padding: 1rem;
+      .projects_features {
+        grid-template-columns: 1fr;
+        .features {
+          width: 320px;
+          height: 180px;
+          &:hover {
+            width: 320px;
+            height: 180px;
+          }
+        }
+      }
+    }
+  }
+}

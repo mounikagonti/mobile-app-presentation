@@ -1,0 +1,122 @@
+.pricing_wrapper {
+  width: 100vw;
+  @include displayCenter(center, center);
+  flex-direction: column;
+  background-color: #ffffff;
+  .pricing_container {
+    width: 95vw;
+    height: 450px;
+    background-image: linear-gradient(310deg, #7927cb, #ff0080);
+    border-radius: 30px;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    color: $white_color;
+    padding: 1rem;
+    margin-top: 100px;
+    .pricing_btn {
+      background: linear-gradient(
+        to left,
+        #16192b,
+        #16192b 50%,
+        #373d69 75%,
+        #373d69 75%
+      );
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+    .our_price_title {
+      font-size: 32px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+  .pricing_card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // &:nth-child(2) {
+    //   width: 350px;
+    //   height: 450px;
+    // }
+    // gap: 20px;
+    .pricing_card {
+      width: 350px;
+      height: 360px;
+      background-color: #ffffff;
+      padding: 1rem 3rem;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-top: -70px;
+      &:nth-child(2) {
+        transform: scale(1.2);
+        .buy_btn {
+          background-image: linear-gradient(310deg, #7927cb, #ff0080);
+        }
+      }
+
+      // &:nth-child(2) {
+      //   width: 400px;
+      //   height: 500px;
+      //   z-index: 10;
+      // }
+      // &:nth-child(3) {
+      //   margin-left: 10px;
+      // }
+      .pricing_card_name {
+        font-size: 16px;
+        font-weight: bold;
+        @include displayCenter(center, center);
+        color: #67748e;
+      }
+      .price {
+        @include displayCenter(center, center);
+        font-size: 45px;
+        font-weight: bold;
+        color: #344767;
+      }
+      .benefits_wrapper {
+        margin-top: 30px;
+        .benefits {
+          display: flex;
+          font-size: 16px;
+          color: #67748e;
+          .benefit {
+            margin-left: 10px;
+          }
+        }
+      }
+      .buy_btn {
+        @include displayCenter(center, center);
+        margin-top: 40px;
+        background: linear-gradient(
+          to left,
+          #16192b,
+          #16192b 50%,
+          #373d69 75%,
+          #373d69 75%
+        );
+        border-radius: 8px;
+        padding: 10px 10px;
+        font-size: 14px;
+        color: $white_color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .pricing_wrapper {
+    .pricing_card_wrapper {
+      grid-template-columns: 1fr;
+      gap: 120px;
+    }
+  }
+}

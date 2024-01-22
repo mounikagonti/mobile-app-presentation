@@ -1,0 +1,88 @@
+@mixin displayCenter($aline-items, $justify-content) {
+  display: flex;
+  align-items: $aline-items;
+  justify-content: $justify-content;
+}
+
+@mixin border($width, $color) {
+  border: $width solid $color;
+}
+
+@mixin text-shadow($h-shadow, $v-shadow, $blur_radius, $color) {
+  text-shadow: $h-shadow $v-shadow $blur_radius $color;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1200px;
+
+$black_color: #000;
+$brand_color: #d13f30;
+$white_color: #ffff;
+$sec_white_color: #e9e3dc;
+$btn_color: #647298;
+$bag_color: #3b4664;
+$first_color: #191f32;
+$second_color: #252d44;
+
+
+
+
+
+
+
+
+// --bs-blue: #63b3ed;
+//   --bs-indigo: #596cff;
+//   --bs-purple: #6f42c1;
+//   --bs-pink: #d63384;
+//   --bs-red: #f56565;
+//   --bs-orange: #fd7e14;
+//   --bs-yellow: #fbd38d;
+//   --bs-green: #81e6d9;
+//   --bs-teal: #20c997;
+//   --bs-cyan: #0dcaf0;
+//   --bs-gray: #6c757d;
+//   --bs-gray-dark: #343a40;
+//   --bs-body-color: #67748e;
+//   --bs-primary: #cb0c9f;
+//   --bs-secondary: #8392ab;
+//   --bs-success: null;
+//   --bs-info: #17c1e8;
+//   --bs-warning: #fbcf33;
+//   --bs-danger: #ea0606;
+//   --bs-light: #e9ecef;
+//   --bs-dark: #344767;
+//   --bs-white: #fff;
+//   --bs-gradient-primary-right: #7928ca;
+//   --bs-gradient-primary-left: #ff0080;
+//   --bs-gradient-info-right: #2152ff;
+//   --bs-gradient-info-left: #21d4fd;
+//   --bs-gradient-danger-right: #ea0606;
+//   --bs-gradient-danger-left: #ff667c;
+//   --bs-gradient-warning-right: #f53939;
+//   --bs-gradient-warning-left: #fbcf33;
+//   --bs-gradient-success-right: #17ad37;
+//   --bs-gradient-success-left: #98ec2d;
+//   --bs-gradient-secondary-right: #627594;
+//   --bs-gradient-secondary-left: #a8b8d8;
+//   --bs-gradient-dark-right: #141727;
+//   --bs-gradient-dark-left: #3a416f;
+//   --bs-gradient-light-right: #ced4da;
+//   --bs-gradient-light-left: #ebeff4;
+//   --bs-font-sans-serif: Open Sans;
+//   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+//   --bs-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
+// }
+
+
+
+
+
+
+
+
+// box shadow
+// #ece41a
+$box_shadow: 0 8px 8px -4px rgb(74, 177, 200);

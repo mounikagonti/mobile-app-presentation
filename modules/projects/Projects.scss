@@ -1,0 +1,72 @@
+.projects_wrapper {
+  //   height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  .projects_container {
+    max-width: 1320px;
+    margin: auto;
+    .projects_top {
+      max-width: 500px;
+      h1 {
+        font-size: 36px;
+        color: #344767;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #67748e;
+        span {
+          color: #18c2e9;
+        }
+      }
+    }
+    .projects_features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 100px;
+      .features {
+        width: 400px;
+        height: 180px;
+        padding: 15px;
+        &:hover {
+          width: 400px;
+          height: 180px;
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .calender_icon {
+          width: 50px;
+          height: 50px;
+          background-image: linear-gradient(310deg, #7927cb, #ff0080);
+          @include displayCenter(center, center);
+          color: $white_color;
+          font-size: 25px;
+          border-radius: 12px;
+        }
+        h2 {
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #344767;
+        }
+        p {
+          font-size: 16px;
+          margin-top: 10px;
+          color: #67748e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .projects_wrapper {
+    .projects_container {
+      padding: 1rem;
+      .projects_features {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
